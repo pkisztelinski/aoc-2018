@@ -1,6 +1,7 @@
 import re
 
-aoc_input_data = open("input.txt").readlines()
+with open("input.txt") as f:
+    aoc_input_data = f.readlines()
 
 index_regex = re.compile(r'#([0-9]+)')
 position_regex = re.compile(r'([0-9]+),([0-9]+)')

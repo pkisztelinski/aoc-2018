@@ -1,7 +1,8 @@
 import re
 import itertools
 
-aoc_input_data = open("input.txt").readlines()
+with open("input.txt") as f:
+    aoc_input_data = f.readlines()
 
 position_regex = re.compile(r'([0-9]+),([0-9]+)')
 size_regex = re.compile(r'([0-9]+)x([0-9]+)')

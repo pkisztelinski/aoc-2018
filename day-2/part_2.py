@@ -1,4 +1,5 @@
-input_data = [line.rstrip('\n') for line in open('input.txt')]
+with open("input.txt") as f:
+    input_data = [line.rstrip('\n') for line in f]
 
 while len(input_data) > 0:
     id_ = input_data.pop()

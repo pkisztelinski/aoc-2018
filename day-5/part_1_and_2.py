@@ -1,4 +1,5 @@
-input_data = [line.rstrip('\n') for line in open('input.txt')][0]
+with open("input.txt") as f:
+    input_data = [line.rstrip('\n') for line in f][0]
 
 
 def create_polymer_or_something(data):

@@ -4,7 +4,8 @@ from functools import reduce
 import bisect
 from operator import itemgetter
 
-aoc_input_data = open("input.txt").readlines()
+with open("input.txt") as f:
+    aoc_input_data = f.readlines()
 
 time_regex = re.compile(r'([0-9]+):([0-9]+)')
 date_regex = re.compile(r'([0-9]+)-([0-9]+)-([0-9]+)')

@@ -1,8 +1,7 @@
-test_data = [int(line.rstrip('\n'))for line in open('input.txt')]
+from functools import reduce
+
+with open("input.txt") as f:
+    input_data = [int(line.rstrip('\n')) for line in f]
 
 
-result = 0
-for data in test_data:
-    result += data
-
-print(result)
+print(reduce(lambda x, y: x + y, input_data))

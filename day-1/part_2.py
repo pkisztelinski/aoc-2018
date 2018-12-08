@@ -1,4 +1,5 @@
-input_data = [int(line.rstrip('\n')) for line in open('input.txt')]
+with open("input.txt") as f:
+    input_data = [int(line.rstrip('\n')) for line in f]
 
 result = None
 tmp_add_result = 0
